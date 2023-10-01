@@ -8,4 +8,7 @@ app.use('/favicon.ico', serveStatic({ path: './src/favicon.ico' }))
 app.get('/', (c) => c.text('start of something great.'))
 app.get('*', serveStatic({ path: './src/static/fallback.txt' }))
 
-export default app
+export default {
+  port: 8000,
+  fetch: app.fetch,
+}
