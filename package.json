@@ -1,9 +1,11 @@
 {
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/index.tsx",
+    "watch": "bun run --watch src/index.tsx"
   },
   "dependencies": {
-    "hono": "^3.7.2"
+    "hono": "^3.7.2",
+    "klaviyo-api": "6.0.1"
   },
   "devDependencies": {
     "bun-types": "^1.0.3"
